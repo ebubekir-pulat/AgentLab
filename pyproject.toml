@@ -1,0 +1,17 @@
+[project]
+name = "agentlab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jsonschema>=4.26.0",
+    "ollama>=0.6.3",
+]
+
+[project.scripts]
+agentlab = "agentlab:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
