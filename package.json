@@ -1,0 +1,29 @@
+{
+  "name": "agentlab",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ebubekir-pulat/AgentLab#readme",
+  "bugs": {
+    "url": "https://github.com/ebubekir-pulat/AgentLab/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebubekir-pulat/AgentLab.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test:python && npm run test:typescript",
+    "test:python": "uv run pytest -v",
+    "test:typescript": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "vitest": "^5.0.3"
+  }
+}
